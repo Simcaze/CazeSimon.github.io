@@ -366,7 +366,7 @@
       <div class="nav-dropdown">
         <a href="#projets" onclick="document.querySelector('[onclick*=ppe]')&&switchTabDirect('ppe')">
           <span class="nav-dd-icon">📁</span>
-          <span><span class="nav-dd-title">PPE — Projets E5</span><span class="nav-dd-sub">Projets professionnels encadrés</span></span>
+          <span><span class="nav-dd-title">FRP — Projets E5</span><span class="nav-dd-sub">Projets professionnels encadrés</span></span>
         </a>
         <a href="#projets" onclick="switchTabDirect('tp')">
           <span class="nav-dd-icon">🛠️</span>
@@ -663,13 +663,7 @@
 
     </div>
 
-    <!-- Technologies -->
-    <div style="margin-top:2rem;background:var(--gray-800);border:1px solid var(--gray-600);border-radius:12px;padding:1.25rem 1.5rem;" class="fade-in">
-      <div style="font-size:0.72rem;color:var(--gray-400);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem;">Technologies &amp; outils utilisés</div>
-      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
-        <span class="tag">Windows Server</span><span class="tag">Exchange Server</span><span class="tag">Active Directory</span><span class="tag">MDT</span><span class="tag">GPO</span><span class="tag">Onyx</span><span class="tag">VLAN</span><span class="tag">Baie de brassage</span><span class="tag">Outlook</span><span class="tag">CSV/Excel</span>
-      </div>
-    </div>
+
   </div>
 </section>
 
@@ -698,12 +692,7 @@
 
     <div class="cert-section-title" style="margin-top:2.5rem;">Certifications informatiques</div>
     <div class="cert-grid">
-      <div class="cert-card">
-        <span class="cert-badge inprogress">En cours</span>
-        <div class="cert-title">BTS SIO option SISR</div>
-        <div class="cert-org">Lycée Gaston Berger, Lille</div>
-        <div class="cert-year">2026 — Session en cours</div>
-      </div>
+
 
       <!-- PIX -->
       <div class="cert-card" style="cursor: pointer;" onclick="openPdfViewer('Certification Pix — Simon Cazé', 'pix.pdf')">
@@ -749,7 +738,7 @@
 
     <!-- ONGLETS -->
     <div class="proj-tabs">
-      <div class="proj-tab active" onclick="switchTab('ppe', this)">📁 PPE — Projets E5</div>
+      <div class="proj-tab active" onclick="switchTab('ppe', this)">📁 FRP — Projets E5</div>
       <div class="proj-tab" onclick="switchTab('tp', this)">🛠️ Procédures Techniques</div>
     </div>
 
@@ -822,14 +811,50 @@
             </div>
             <p class="ppe-desc">Rapport de synthèse retraçant les deux périodes de stage effectuées à l'Hôpital Saint-Philibert (GHICL). Ce document présente l'environnement professionnel, les missions réalisées (masterisation, Active Directory, intégration réseau), les compétences mobilisées et le bilan global des deux années de formation en alternance.</p>
             <div class="ppe-tech-row">
-              <span class="ppe-tech">Stage 1 — 2024</span>
-              <span class="ppe-tech">Stage 2 — 2025</span>
+              <span class="ppe-tech">Stage 1 — 2025</span>
+              <span class="ppe-tech">Stage 2 — 2026</span>
               <span class="ppe-tech">Active Directory</span>
               <span class="ppe-tech">Masterisation</span>
               <span class="ppe-tech">Infrastructure réseau</span>
             </div>
             <div class="ppe-actions">
               <a href="#" class="btn-doc btn-doc-primary">📄 Voir le rapport</a>
+            </div>
+
+            <!-- Attestations de stage -->
+            <div style="margin-top:1.5rem; border-top:1px solid var(--gray-600); padding-top:1.25rem;">
+              <div style="font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;">📋 Attestations de stage</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+
+                <!-- Attestation Stage 1 -->
+                <div style="background:var(--gray-900);border:1px solid var(--gray-600);border-radius:10px;padding:1rem;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(204,109,61,0.4)'" onmouseout="this.style.borderColor='var(--gray-600)'">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.6rem;">
+                    <span style="background:rgba(204,109,61,0.15);border:1px solid rgba(204,109,61,0.3);color:#e8956a;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:99px;">STAGE 1</span>
+                    <span style="font-size:0.7rem;color:#16a34a;font-weight:600;">✓ SESSION 2025</span>
+                  </div>
+                  <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;color:var(--white);margin-bottom:0.3rem;">GHICL — Hôpital Saint-Philibert</div>
+                  <div style="font-size:0.72rem;color:var(--gray-300);margin-bottom:0.25rem;">📅 19/05/2025 → 27/06/2025</div>
+                  <div style="font-size:0.72rem;color:var(--gray-300);margin-bottom:0.25rem;">⏱ 6 semaines</div>
+                  <div style="font-size:0.72rem;color:var(--gray-300);margin-bottom:0.75rem;">🏢 Service DSIO / Pôle intégration / Support et exploitation</div>
+                  <div style="font-size:0.7rem;color:var(--gray-400);margin-bottom:0.6rem;font-style:italic;">Signé par : LHAUTE David — Fait à Lomme le 27/06/2025</div>
+                  <button onclick="openPdfViewer('Attestation de stage — Stage 1 (2025)', 'attestation-stage-1.pdf')" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:500;padding:0.45rem 1rem;border-radius:7px;background:transparent;color:var(--gray-200);border:1px solid var(--gray-600);cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;width:100%;justify-content:center;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--gray-600)';this.style.color='var(--gray-200)'">👁 Voir l'attestation</button>
+                </div>
+
+                <!-- Attestation Stage 2 -->
+                <div style="background:var(--gray-900);border:1px solid var(--gray-600);border-radius:10px;padding:1rem;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(204,109,61,0.4)'" onmouseout="this.style.borderColor='var(--gray-600)'">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.6rem;">
+                    <span style="background:rgba(204,109,61,0.15);border:1px solid rgba(204,109,61,0.3);color:#e8956a;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:99px;">STAGE 2</span>
+                    <span style="font-size:0.7rem;color:#16a34a;font-weight:600;">✓ SESSION 2026</span>
+                  </div>
+                  <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;color:var(--white);margin-bottom:0.3rem;">GHICL — Hôpital Saint-Philibert</div>
+                  <div style="font-size:0.72rem;color:var(--gray-300);margin-bottom:0.25rem;">📅 05/01/2026 → 13/02/2026</div>
+                  <div style="font-size:0.72rem;color:var(--gray-300);margin-bottom:0.25rem;">⏱ 6 semaines</div>
+                  <div style="font-size:0.72rem;color:var(--gray-300);margin-bottom:0.75rem;">🏢 Service Infrastructures / Système / Stockage / Réseau et sécurité</div>
+                  <div style="font-size:0.7rem;color:var(--gray-400);margin-bottom:0.6rem;font-style:italic;">Signé par : VANOVERSCHELDE Gautier — Fait à Lomme le 21/01/2026</div>
+                  <button onclick="openPdfViewer('Attestation de stage — Stage 2 (2026)', 'attestation-stage-2.pdf')" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:500;padding:0.45rem 1rem;border-radius:7px;background:transparent;color:var(--gray-200);border:1px solid var(--gray-600);cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;width:100%;justify-content:center;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--gray-600)';this.style.color='var(--gray-200)'">👁 Voir l'attestation</button>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
