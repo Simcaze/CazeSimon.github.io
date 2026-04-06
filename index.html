@@ -362,13 +362,13 @@
       </div>
     </li>
     <li>
-      <span>Projets <span class="nav-arrow">▾</span></span>
+      <span>s <span class="nav-arrow">▾</span></span>
       <div class="nav-dropdown">
-        <a href="#projets" onclick="document.querySelector('[onclick*=ppe]')&&switchTabDirect('ppe')">
+        <a href="#s" onclick="document.querySelector('[onclick*=ppe]')&&switchTabDirect('ppe')">
           <span class="nav-dd-icon">📁</span>
-          <span><span class="nav-dd-title">FRP — Projets E5</span><span class="nav-dd-sub">Projets professionnels encadrés</span></span>
+          <span><span class="nav-dd-title">FRP — s E5</span><span class="nav-dd-sub">s professionnels encadrés</span></span>
         </a>
-        <a href="#projets" onclick="switchTabDirect('tp')">
+        <a href="#s" onclick="switchTabDirect('tp')">
           <span class="nav-dd-icon">🛠️</span>
           <span><span class="nav-dd-title">Procédures Techniques</span><span class="nav-dd-sub">TP et documentations</span></span>
         </a>
@@ -516,7 +516,7 @@
           <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent2));"></div>
           <div style="font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 1rem;">Qu'est-ce que le BTS SIO ?</div>
           <p style="font-size: 0.875rem; color: var(--gray-300); line-height: 1.75; margin-bottom: 1rem;">Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 qui forme des professionnels de l'informatique capables de répondre aux besoins des entreprises et des organisations en matière de services informatiques.</p>
-          <p style="font-size: 0.875rem; color: var(--gray-300); line-height: 1.75;">Le BTS SIO comprend des cours théoriques ainsi que des travaux pratiques en entreprise, au cours desquels les étudiants peuvent acquérir de l'expérience en travaillant sur des projets réels. Les diplômés du BTS SIO peuvent travailler en tant que techniciens de l'informatique, administrateurs systèmes et réseaux, développeurs d'applications, chefs de projet informatique, etc.</p>
+          <p style="font-size: 0.875rem; color: var(--gray-300); line-height: 1.75;">Le BTS SIO comprend des cours théoriques ainsi que des travaux pratiques en entreprise, au cours desquels les étudiants peuvent acquérir de l'expérience en travaillant sur des s réels. Les diplômés du BTS SIO peuvent travailler en tant que techniciens de l'informatique, administrateurs systèmes et réseaux, développeurs d'applications, chefs de  informatique, etc.</p>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
@@ -792,6 +792,56 @@
           </div>
         </div>
       </div>
+
+      <div class="ppe-section-title">Projet école</div>
+
+<div class="ppe-card">
+  <div class="ppe-card-header" onclick="togglePPE(this)">
+    <div class="ppe-card-left">
+      <div class="ppe-num-badge">Projet</div>
+      <div>
+        <div class="ppe-card-title">Gaston MediLab — Infrastructure de Laboratoire</div>
+        <div class="ppe-card-meta">Projet académique complet de mise en réseau et services</div>
+      </div>
+    </div>
+    <div class="ppe-chevron">▼</div>
+  </div>
+  <div class="ppe-card-body">
+    <div class="ppe-desc">
+      <strong>Contexte & objectifs :</strong><br>
+      Dans le cadre d'un scénario professionnel, l'objectif était de concevoir et déployer l'intégralité de l'infrastructure réseau et système pour Gaston MediLab. La mission consistait à garantir la haute disponibilité des services, la sécurité des données médicales et la supervision de l'ensemble du parc.
+    </div>
+    
+    <div class="ppe-desc">
+      <strong>Missions & tâches réalisées :</strong><br>
+      • Configuration de l'infrastructure réseau (VLANs, agrégation de liens LACP).<br>
+      • Déploiement de serveurs Windows (Active Directory, DNS, DHCP) et Linux.<br>
+      • Mise en place d'un équilibreur de charge (Load Balancer) pour la disponibilité.<br>
+      • Sécurisation des flux via HTTPS/TLS et gestion des certificats.<br>
+      • Implémentation d'une solution de gestion de parc et helpdesk (GLPI).<br>
+      • Centralisation des journaux (Graylog) et supervision proactive (Zabbix).
+    </div>
+
+    <div class="ppe-tech-row">
+      <span class="ppe-tech">Infrastructure : Windows Server, Linux (Rocky/Debian), AD, DNS, DHCP</span>
+      <span class="ppe-tech">Réseau : VLAN, LACP, Load Balancer, HTTPS/TLS</span>
+      <span class="ppe-tech">Supervision & Logs : Zabbix, Graylog, GLPI</span>
+    </div>
+
+    <div class="ppe-desc">
+      <strong>Compétences BTS SIO :</strong><br>
+      • 🟢 Déployer un service<br>
+      • 🟢 Gérer le patrimoine<br>
+      • 🟢 Travailler en mode projet
+    </div>
+
+    <div class="ppe-actions">
+      <span class="btn-doc btn-doc-primary" onclick="openPdfViewer('Documentation Gaston MediLab', 'docs/gaston-medilab.pdf')">
+        📄 Voir la documentation
+      </span>
+    </div>
+  </div>
+</div>
 
       <div style="margin-top:2rem;">
         <div class="ppe-section-title">📋 Rapport de Synthèse de Stage</div>
